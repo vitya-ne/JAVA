@@ -5,25 +5,13 @@ import java.lang.reflect.Field;
 import static java.lang.System.out;
 
 public class Reflection5 {
-    private static void showField( Field field ) {
-        int f_modifiers = field.getModifiers();
-        out.println("\n    NAME: ["+field.getName()+"]"+
-                "\n    "+
-                ReflectionCommon.getModifiersInfo(f_modifiers )+
-                ", TYPE: "+field.getType().getCanonicalName()
-        );
-    }
-
     private static void showFieldValue( Object instance, Field field, String label ) {
-        field.setAccessible( true );
-        try {
-            out.print( label + field.get( instance ));
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        }
+        Object value = ReflectionCommon.showFieldValue( instance, field );
+
+        out.println( label + value );
     }
 
-    private static void setFieldStringValue( Object instance, Field field, int new_value) {
+    private static void setFieldIntValue( Object instance, Field field, int new_value ) {
         field.setAccessible( true );
         try {
             field.set( instance, new_value );
@@ -32,7 +20,7 @@ public class Reflection5 {
         }
     }
 
-    private static void doWithField(String class_name, String field_name ) {
+    private static void doWithField( String class_name, String field_name ) {
         Object instance;
         Field field;
 
@@ -52,10 +40,11 @@ public class Reflection5 {
 
         out.print( ReflectionCommon.getClassName( instance ) );
 
-        showField( field );
+        out.println( ReflectionCommon.getFieldInfo( field ) );
+
         showFieldValue( instance, field, "\n    OLD VALUE: " );
 
-        setFieldStringValue( instance, field, 8888 );
+        setFieldIntValue( instance, field, 8888 );
 
         showFieldValue( instance, field, "\n    NEW VALUE: " );
     }
@@ -70,11 +59,16 @@ public class Reflection5 {
 
         out.println( "\nREFLECTION - 5" );
 
-        if ( args.length == 2 ) {
-            class_name = args[0];
-            field_name = args[1];
-
-            doWithField( class_name, field_name );
+        if ( args.length < 2 ) {
+            out.println("\nPlease set program arguments: <ClassName> <ClassField>");
+            out.println("Example:");
+            out.println("java.lang.String hash");
+            return;
         }
+
+        class_name = args[0];
+        field_name = args[1];
+
+        doWithField( class_name, field_name );
     }
 }

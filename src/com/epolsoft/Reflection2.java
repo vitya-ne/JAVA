@@ -10,6 +10,7 @@ public class Reflection2 {
         Выводим данные о имени класса
     */
     public static void showClassName( Class refl_class ) {
+
         out.print( ReflectionCommon.getClassName( refl_class ) );
     }
 
@@ -41,7 +42,7 @@ public class Reflection2 {
             int f_modifiers = f.getModifiers();
 
             if ( !Modifier.isFinal( f_modifiers )) {
-                out.println( "\n    NAME: [" + f.getName() + "]" +
+                out.println( ReflectionCommon.getName( f ) +
                         "\n    " +
                         ReflectionCommon.getModifiersInfo( f_modifiers ) +
                         ", TYPE: " + f.getType().getCanonicalName()
@@ -71,11 +72,10 @@ public class Reflection2 {
             int f_modifiers = f.getModifiers();
 
             if ( Modifier.isFinal( f_modifiers ) ) {
-                out.println( "\n    NAME: [" + f.getName() + "]" +
+                out.println( ReflectionCommon.getName( f ) +
                         "\n    " +
                         ReflectionCommon.getModifiersInfo( f_modifiers ) +
-                        ", TYPE: " + f.getType() +
-                        ", GENERIC TYPE: " + f.getGenericType()
+                        ", TYPE: " + f.getType()
                 );
             }
         }
@@ -98,7 +98,7 @@ public class Reflection2 {
         }
 
         for ( Method m: methods ) {
-            out.println( "\n    " + ReflectionCommon.getMethodInfo( m ) );
+            out.println( ReflectionCommon.getMethodInfo( m ) );
         }
 
     }
