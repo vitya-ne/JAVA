@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92561af4-9e62-4fa0-b4f6-300420bf054b" name="Default Changelist" comment="" />
+    <list default="true" id="92561af4-9e62-4fa0-b4f6-300420bf054b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/epolsoft/Reflection1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epolsoft/Reflection1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/epolsoft/Reflection2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epolsoft/Reflection2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/epolsoft/Reflection4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epolsoft/Reflection4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/epolsoft/Reflection5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epolsoft/Reflection5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/epolsoft/Reflection6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epolsoft/Reflection6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/epolsoft/Reflection7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epolsoft/Reflection7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/epolsoft/Reflection8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epolsoft/Reflection8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/epolsoft/ReflectionCommon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epolsoft/ReflectionCommon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/epolsoft/Reflection_Source.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epolsoft/Reflection_Source.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/epolsoft/Reflection_TODO" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epolsoft/Reflection_TODO" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -9,19 +22,19 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection3.java">
+        <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection12.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="60" selection-start-line="60" selection-end-line="60" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="320">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
             </state>
           </provider>
         </entry>
@@ -29,22 +42,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="115" column="45" lean-forward="true" selection-start-line="115" selection-start-column="45" selection-end-line="115" selection-end-column="45" />
+            <state relative-caret-position="565">
+              <caret line="103" column="5" lean-forward="true" selection-start-line="87" selection-start-column="4" selection-end-line="103" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#226#227#0" expanded="true" />
-                <element signature="e#298#299#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/jre/lib/rt.jar!/java/lang/reflect/Field.class">
+        <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection_Source.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="100" column="16" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
+            <state relative-caret-position="475">
+              <caret line="31" column="23" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="23" />
+              <folding>
+                <element signature="e#693#694#0" expanded="true" />
+                <element signature="e#744#745#0" expanded="true" />
+                <element signature="e#945#946#0" expanded="true" />
+                <element signature="e#981#982#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,67 +69,55 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/epolsoft/ReflectionCommon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="50" column="45" lean-forward="true" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
+            <state relative-caret-position="328">
+              <caret line="165" column="43" lean-forward="true" selection-start-line="165" selection-start-column="43" selection-end-line="165" selection-end-column="43" />
               <folding>
-                <element signature="e#705#706#0" expanded="true" />
-                <element signature="e#763#764#0" expanded="true" />
-                <element signature="e#1073#1074#0" expanded="true" />
-                <element signature="e#1139#1140#0" expanded="true" />
-                <element signature="e#1062#1063#0" expanded="true" />
-                <element signature="e#1117#1118#0" expanded="true" />
-                <element signature="e#832#833#0" expanded="true" />
-                <element signature="e#899#900#0" expanded="true" />
-                <element signature="e#1322#1323#0" expanded="true" />
-                <element signature="e#1379#1380#0" expanded="true" />
-                <element signature="e#3112#3113#0" expanded="true" />
-                <element signature="e#3163#3164#0" expanded="true" />
-                <element signature="e#3116#3117#0" expanded="true" />
-                <element signature="e#3179#3180#0" expanded="true" />
-                <element signature="e#4566#4567#0" expanded="true" />
+                <element signature="e#1270#1271#0" expanded="true" />
+                <element signature="e#1328#1329#0" expanded="true" />
+                <element signature="e#1383#1384#0" expanded="true" />
+                <element signature="e#1444#1445#0" expanded="true" />
+                <element signature="e#1505#1506#0" expanded="true" />
+                <element signature="e#1564#1565#0" expanded="true" />
+                <element signature="e#1624#1625#0" expanded="true" />
+                <element signature="e#1689#1690#0" expanded="true" />
+                <element signature="e#1751#1752#0" expanded="true" />
+                <element signature="e#1820#1821#0" expanded="true" />
+                <element signature="e#2257#2258#0" expanded="true" />
+                <element signature="e#2308#2309#0" expanded="true" />
+                <element signature="e#3745#3746#0" expanded="true" />
+                <element signature="e#3795#3796#0" expanded="true" />
+                <element signature="e#4129#4130#0" expanded="true" />
+                <element signature="e#4192#4193#0" expanded="true" />
+                <element signature="e#4949#4950#0" expanded="true" />
+                <element signature="e#5013#5014#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection_TODO">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection7.java">
+        <entry file="jar://$APPLICATION_CONFIG_DIR$/jdks/jbsdk8u202b1491_linux_x86/jre/lib/rt.jar!/java/lang/Class.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-312">
-              <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="176">
+              <caret line="651" column="18" selection-start-line="651" selection-start-column="18" selection-end-line="651" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection8.java">
+        <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection_SourceInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="38" selection-start-line="38" selection-end-line="41" selection-end-column="9" />
+            <state relative-caret-position="76">
+              <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection5.java">
+        <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection_SourceSuper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="49" column="19" lean-forward="true" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="38">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -120,22 +125,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection6.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-92">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="384">
+              <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection4.java">
+        <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection8.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="e#177#178#0" expanded="true" />
-                <element signature="e#251#252#0" expanded="true" />
-                <element signature="e#377#378#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-174">
+              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection7.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-266">
+              <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -153,7 +162,11 @@
     <findStrings>
       <find>getParamInfo</find>
       <find>getN</find>
+      <find>getName</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -161,33 +174,45 @@
         <option value="$PROJECT_DIR$/src/com/epolsoft/Matrix.java" />
         <option value="$PROJECT_DIR$/src/com/epolsoft/Main.java" />
         <option value="$PROJECT_DIR$/src/com/epolsoft/Reflection_SourceSuper.java" />
-        <option value="$PROJECT_DIR$/src/com/epolsoft/Reflection_Source.java" />
         <option value="$PROJECT_DIR$/src/com/epolsoft/Reflection_SourceInterface.java" />
-        <option value="$PROJECT_DIR$/src/com/epolsoft/Reflection1.java" />
         <option value="$PROJECT_DIR$/src/com/epolsoft/Reflection3.java" />
-        <option value="$PROJECT_DIR$/src/com/epolsoft/Reflection_TODO" />
-        <option value="$PROJECT_DIR$/src/com/epolsoft/Reflection5.java" />
-        <option value="$PROJECT_DIR$/src/com/epolsoft/Reflection6.java" />
+        <option value="$PROJECT_DIR$/src/com/epolsoft/Reflection1.java" />
         <option value="$PROJECT_DIR$/src/com/epolsoft/Reflection4.java" />
-        <option value="$PROJECT_DIR$/src/com/epolsoft/ReflectionCommon.java" />
+        <option value="$PROJECT_DIR$/src/com/epolsoft/Reflection9.java" />
+        <option value="$PROJECT_DIR$/src/com/epolsoft/Reflection10.java" />
+        <option value="$PROJECT_DIR$/src/com/epolsoft/Reflection5.java" />
         <option value="$PROJECT_DIR$/src/com/epolsoft/Reflection2.java" />
-        <option value="$PROJECT_DIR$/src/com/epolsoft/Reflection8.java" />
         <option value="$PROJECT_DIR$/src/com/epolsoft/Reflection7.java" />
+        <option value="$PROJECT_DIR$/src/com/epolsoft/Reflection8.java" />
+        <option value="$PROJECT_DIR$/src/com/epolsoft/Reflection11.java" />
+        <option value="$PROJECT_DIR$/src/com/epolsoft/Reflection_TODO" />
+        <option value="$PROJECT_DIR$/src/com/epolsoft/Reflection_Source.java" />
+        <option value="$PROJECT_DIR$/src/com/epolsoft/Reflection6.java" />
+        <option value="$PROJECT_DIR$/src/com/epolsoft/ReflectionCommon.java" />
+        <option value="$PROJECT_DIR$/src/com/epolsoft/Reflection12.java" />
       </list>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="240" />
+    <option name="y" value="158" />
+    <option name="width" value="1440" />
+    <option name="height" value="791" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -217,14 +242,16 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -243,19 +270,37 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.epolsoft.Reflection7" />
+  <component name="RunManager" selected="Application.Reflection12">
+    <configuration name="Reflection11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.epolsoft.Reflection11" />
       <module name="2" />
-      <option name="PROGRAM_PARAMETERS" value="java.lang.String" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <option name="PROGRAM_PARAMETERS" value="java.lang.String serialVersionUID 88888" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epolsoft.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Reflection1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.epolsoft.Reflection1" />
+    <configuration name="Reflection11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.epolsoft.Reflection11" />
+      <module name="2" />
+      <option name="PROGRAM_PARAMETERS" value="java.lang.String hash 8888" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epolsoft.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Reflection12" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.epolsoft.Reflection12" />
       <module name="2" />
       <extension name="coverage">
         <pattern>
@@ -267,14 +312,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Reflection2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.epolsoft.Reflection2" />
+      <module name="2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epolsoft.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Reflection6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.epolsoft.Reflection6" />
+      <module name="2" />
+      <option name="PROGRAM_PARAMETERS" value="java.lang.String isEmpty" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epolsoft.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Reflection7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.epolsoft.Reflection7" />
+      <module name="2" />
+      <option name="PROGRAM_PARAMETERS" value="java.lang.String" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epolsoft.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Reflection1" />
+      <item itemvalue="Application.Reflection7" />
+      <item itemvalue="Application.Reflection11" />
+      <item itemvalue="Application.Reflection6" />
+      <item itemvalue="Application.Reflection2" />
+      <item itemvalue="Application.Reflection12" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Reflection1" />
+        <item itemvalue="Application.Reflection12" />
+        <item itemvalue="Application.Reflection6" />
+        <item itemvalue="Application.Reflection2" />
+        <item itemvalue="Application.Reflection11" />
+        <item itemvalue="Application.Reflection11" />
       </list>
     </recent_temporary>
   </component>
@@ -292,10 +384,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.10074627" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16115262" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -303,36 +394,49 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="2" weight="0.3997833" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.39891893" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
-      <window_info anchor="bottom" id="Terminal" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="6" weight="0.32864866" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Messages" order="9" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32864866" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.2497332" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.32977587" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Run" order="8" visible="true" weight="0.45042643" />
+      <window_info anchor="right" id="Run" order="8" weight="0.30576307" />
     </layout>
   </component>
   <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="Modifier.toString( modifiers )" language="JAVA" />
-        <watch expression="item.getClass();" language="JAVA" />
-      </configuration>
-    </watches-manager>
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/epolsoft/Reflection12.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>m.getName()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>item.getClass();</expression-string>
         <language-id>JAVA</language-id>
@@ -346,13 +450,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
@@ -364,17 +461,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/jre/lib/rt.jar!/java/util/Arrays.class">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/jre/lib/rt.jar!/java/util/Arrays.class" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/jre/lib/rt.jar!/java/lang/reflect/Executable.class" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/jre/lib/rt.jar!/java/lang/reflect/Constructor.class" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/jre/lib/rt.jar!/java/lang/Class.class" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/jre/lib/rt.jar!/java/lang/String.class" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/jre/lib/rt.jar!/java/lang/reflect/Method.class" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/jre/lib/rt.jar!/java/lang/reflect/Field.class" />
+    <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26720">
-          <caret line="1391" column="30" selection-start-line="1391" selection-start-column="30" selection-end-line="1391" selection-end-column="30" />
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/jre/lib/rt.jar!/java/lang/reflect/Executable.class">
+    <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
-          <caret line="210" column="9" lean-forward="true" selection-start-line="210" selection-start-column="9" selection-end-line="210" selection-end-column="9" />
+        <state relative-caret-position="285">
+          <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-95">
+          <caret line="42" column="47" lean-forward="true" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_CONFIG_DIR$/jdks/jbsdk8u202b1491_linux_x86/jre/lib/rt.jar!/java/lang/reflect/Executable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="214" column="25" selection-start-line="214" selection-start-column="16" selection-end-line="214" selection-end-column="25" />
           <folding>
             <element signature="e#6913#6914#0" expanded="true" />
             <element signature="e#6984#6985#0" expanded="true" />
@@ -382,193 +510,144 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/jre/lib/rt.jar!/java/lang/reflect/Constructor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-          <folding>
-            <element signature="e#2698#2699#0" expanded="true" />
-            <element signature="e#2731#2732#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection_SourceSuper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#132#133#0" expanded="true" />
-            <element signature="e#167#168#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection_SourceInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/jre/lib/rt.jar!/java/lang/Class.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="588" column="17" selection-start-line="588" selection-start-column="17" selection-end-line="588" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection_Source.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="36" />
-          <folding>
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#509#510#0" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#646#647#0" expanded="true" />
-            <element signature="e#697#698#0" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/jre/lib/rt.jar!/java/lang/String.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="205" column="26" selection-start-line="205" selection-start-column="19" selection-end-line="205" selection-end-column="26" />
-          <folding>
-            <element signature="e#1925#3538#0" />
-            <element signature="e#3544#4060#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/jre/lib/rt.jar!/java/lang/reflect/Method.class">
+    <entry file="jar://$APPLICATION_CONFIG_DIR$/jdks/jbsdk8u202b1491_linux_x86/jre/lib/rt.jar!/java/lang/reflect/Method.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="176" column="18" selection-start-line="176" selection-start-column="18" selection-end-line="176" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection3.java">
+    <entry file="jar://$APPLICATION_CONFIG_DIR$/jdks/jbsdk8u202b1491_linux_x86/jre/lib/rt.jar!/java/lang/String.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="60" selection-start-line="60" selection-end-line="60" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="418">
+          <caret line="397" column="13" lean-forward="true" selection-start-line="397" selection-start-column="13" selection-end-line="397" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection_TODO">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        <state relative-caret-position="209">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection10.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="45" column="59" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection11.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-207">
+          <caret line="23" column="94" selection-start-line="23" selection-start-column="78" selection-end-line="23" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection8.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-174">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-266">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection6.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-92">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="384">
+          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection4.java">
+    <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection_SourceInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="76">
+          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection_SourceSuper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection_Source.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="23" />
           <folding>
-            <element signature="e#177#178#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#377#378#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="49" column="19" lean-forward="true" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/jre/lib/rt.jar!/java/lang/reflect/Field.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="100" column="16" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epolsoft/ReflectionCommon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="50" column="45" lean-forward="true" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
-          <folding>
-            <element signature="e#705#706#0" expanded="true" />
-            <element signature="e#763#764#0" expanded="true" />
-            <element signature="e#1073#1074#0" expanded="true" />
-            <element signature="e#1139#1140#0" expanded="true" />
-            <element signature="e#1062#1063#0" expanded="true" />
-            <element signature="e#1117#1118#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#899#900#0" expanded="true" />
-            <element signature="e#1322#1323#0" expanded="true" />
-            <element signature="e#1379#1380#0" expanded="true" />
-            <element signature="e#3112#3113#0" expanded="true" />
-            <element signature="e#3163#3164#0" expanded="true" />
-            <element signature="e#3116#3117#0" expanded="true" />
-            <element signature="e#3179#3180#0" expanded="true" />
-            <element signature="e#4566#4567#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+            <element signature="e#744#745#0" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="115" column="45" lean-forward="true" selection-start-line="115" selection-start-column="45" selection-end-line="115" selection-end-column="45" />
+        <state relative-caret-position="565">
+          <caret line="103" column="5" lean-forward="true" selection-start-line="87" selection-start-column="4" selection-end-line="103" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#226#227#0" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection8.java">
+    <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection12.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="38" selection-start-line="38" selection-end-line="41" selection-end-column="9" />
+        <state relative-caret-position="320">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/epolsoft/Reflection7.java">
+    <entry file="file://$PROJECT_DIR$/src/com/epolsoft/ReflectionCommon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-312">
-          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        <state relative-caret-position="328">
+          <caret line="165" column="43" lean-forward="true" selection-start-line="165" selection-start-column="43" selection-end-line="165" selection-end-column="43" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1270#1271#0" expanded="true" />
+            <element signature="e#1328#1329#0" expanded="true" />
+            <element signature="e#1383#1384#0" expanded="true" />
+            <element signature="e#1444#1445#0" expanded="true" />
+            <element signature="e#1505#1506#0" expanded="true" />
+            <element signature="e#1564#1565#0" expanded="true" />
+            <element signature="e#1624#1625#0" expanded="true" />
+            <element signature="e#1689#1690#0" expanded="true" />
+            <element signature="e#1751#1752#0" expanded="true" />
+            <element signature="e#1820#1821#0" expanded="true" />
+            <element signature="e#2257#2258#0" expanded="true" />
+            <element signature="e#2308#2309#0" expanded="true" />
+            <element signature="e#3745#3746#0" expanded="true" />
+            <element signature="e#3795#3796#0" expanded="true" />
+            <element signature="e#4129#4130#0" expanded="true" />
+            <element signature="e#4192#4193#0" expanded="true" />
+            <element signature="e#4949#4950#0" expanded="true" />
+            <element signature="e#5013#5014#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_CONFIG_DIR$/jdks/jbsdk8u202b1491_linux_x86/jre/lib/rt.jar!/java/lang/Class.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="651" column="18" selection-start-line="651" selection-start-column="18" selection-end-line="651" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -636,6 +715,17 @@
         </settings>
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
         <settings>
           <splitter-proportions>
             <option name="proportions">

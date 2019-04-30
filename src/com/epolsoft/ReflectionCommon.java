@@ -15,12 +15,8 @@ public class ReflectionCommon {
     }
 
     public static Class getReflectionClass( String class_name ) {
-        Class source;
-
         try {
-            source = Class.forName( class_name );
-
-            return source;
+            return Class.forName( class_name );
         } catch ( ClassNotFoundException err ) {
             //err.printStackTrace();
             return null;
@@ -43,8 +39,24 @@ public class ReflectionCommon {
     /*
         Возвращаем представление имени для Executable и его наследников
     */
+//    //public static String getName( Method m ) {
+//        return "NAME: [" + class_instance.getClass() + "]";
+//    }
+
+//    public static String getName( Method m ) {
+//        return getName( m );
+//    }
+
+    public static String getName( Field f ) {
+        return "\n    NAME: [" + f.getName() + "]";
+    }
+
+    public static String getName( Executable exec ) {
+        return "\n    NAME: [" + exec.getName() + "]";
+    }
+
     public static String getName( Object class_instance ) {
-        return "NAME: [" + class_instance.getClass() + "]";
+        return getName( class_instance.getClass() );
     }
 
     public static String getName( Class class_instance ) {
@@ -74,7 +86,7 @@ public class ReflectionCommon {
     }
 
     public static String getMethodInfo( Method m, String splitter ) {
-        return getName( m.getClass() ) +
+        return getName( m ) +
                 splitter +
                 getModifiersInfo( m.getModifiers() ) +
                 splitter +
@@ -87,7 +99,9 @@ public class ReflectionCommon {
             return null;
         }
 
-        return createInstance( getReflectionClass( class_name ) );
+        Class class_instance = getReflectionClass( class_name );
+
+        return createInstance( class_instance );
     }
 
 
@@ -123,7 +137,7 @@ public class ReflectionCommon {
     }
 
     public static String getFieldInfo( Field f, String splitter ) {
-        return getName( f.getClass() ) +
+        return getName( f ) +
                 splitter +
                 getModifiersInfo( f.getModifiers() ) +
                 splitter +
@@ -166,6 +180,37 @@ public class ReflectionCommon {
         } catch ( SecurityException x ) {
             //x.printStackTrace();
             return null;
+        }
+    }
+
+    public static Object showFieldValue( Object instance, Field field ) {
+        field.setAccessible( true );
+
+        try {
+            return field.get( instance );
+        } catch (IllegalAccessException e) {
+            //e.printStackTrace();
+            return null;
+        }
+    }
+
+    public static Boolean isPrivateField( Field f ) {
+        int modifiers = f.getModifiers();
+
+        if ( Modifier.isPrivate( modifiers ) ) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public static Boolean isPrivateMethod( Method m ) {
+        int modifiers = m.getModifiers();
+
+        if ( Modifier.isPrivate( modifiers ) ) {
+            return true;
+        } else {
+            return false;
         }
     }
 }

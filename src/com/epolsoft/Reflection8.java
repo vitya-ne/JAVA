@@ -1,10 +1,8 @@
 package com.epolsoft;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 
-import static java.lang.System.in;
 import static java.lang.System.out;
 
 public class Reflection8 {
@@ -24,7 +22,7 @@ public class Reflection8 {
         for ( Field f: fields ) {
             int modifiers = f.getModifiers();
             if ( Modifier.isPrivate( modifiers ) ) {
-                out.println( "\n    " + ReflectionCommon.getFieldInfo( f ) );
+                out.println( ReflectionCommon.getFieldInfo( f ) );
             }
         }
     }
@@ -44,7 +42,7 @@ public class Reflection8 {
         for ( Field f: fields ) {
             int modifiers = f.getModifiers();
             if ( Modifier.isPublic( modifiers ) ) {
-                out.println( "\n    " + ReflectionCommon.getFieldInfo( f ) );
+                out.println( ReflectionCommon.getFieldInfo( f ) );
             }
         }
     }
@@ -59,18 +57,24 @@ public class Reflection8 {
 
         out.println( "\nREFLECTION - 8" );
 
-        if ( args.length > 0 ) {
-            instance = ReflectionCommon.createInstance( args[0] );
-
-            if ( instance == null ) {
-                out.print( "\nERROR!" );
-                return;
-            }
-
-            out.print( ReflectionCommon.getClassName( instance.getClass() ) );
-
-            showPublicFields( instance );
-            showPrivateFields( instance );
+        if ( args.length == 0 ) {
+            out.println("\nPlease set program arguments: <ClassName>");
+            out.println("Example:");
+            out.println("java.lang.String");
+            return;
         }
+
+        instance = ReflectionCommon.createInstance( args[0] );
+
+        if ( instance == null ) {
+            out.print( "\nERROR!" );
+            return;
+        }
+
+        out.print( ReflectionCommon.getClassName( instance ) );
+
+        showPublicFields( instance );
+        showPrivateFields( instance );
+
     }
 }

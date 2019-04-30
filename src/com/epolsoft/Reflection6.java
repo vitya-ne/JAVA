@@ -19,7 +19,7 @@ public class Reflection6 {
 
     }
 
-    private static void doWithMethod(String class_name, String method_name ) {
+    private static void doWithMethod( String class_name, String method_name ) {
         Object instance;
         Method method;
 
@@ -37,9 +37,9 @@ public class Reflection6 {
             return;
         }
 
-        out.print( ReflectionCommon.getClassName( instance.getClass() ) );
+        out.print( ReflectionCommon.getClassName( instance ) );
         out.print( "\n  METHOD:" );
-        out.println( "\n    " + ReflectionCommon.getMethodInfo( method ) );
+        out.println( ReflectionCommon.getMethodInfo( method ) );
 
         invokeMethod( instance, method );
     }
@@ -54,11 +54,16 @@ public class Reflection6 {
 
         out.println( "\nREFLECTION - 6" );
 
-        if ( args.length == 2 ) {
-            class_name = args[0];
-            method_name = args[1];
-
-            doWithMethod( class_name, method_name );
+        if ( args.length < 2 ) {
+            out.println("\nPlease set program arguments: <ClassName> <ClassMethod>");
+            out.println("Example:");
+            out.println("java.lang.String isEmpty");
+            return;
         }
+
+        class_name = args[0];
+        method_name = args[1];
+
+        doWithMethod( class_name, method_name );
     }
 }

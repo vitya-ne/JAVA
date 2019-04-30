@@ -20,6 +20,11 @@ public final class Reflection_Source extends Reflection_SourceSuper implements R
         this.number = number;
     }
 
+    private void setNumberX2( int number ) {
+
+        this.number = number * 2;
+    }
+
     public String getName() {
         return this.name;
     }
@@ -34,6 +39,10 @@ public final class Reflection_Source extends Reflection_SourceSuper implements R
 
     public static String getInfo() {
         return info;
+    }
+
+    public Reflection_Source() {
+        this.number = 0;
     }
 
     public Reflection_Source(int number ) {
