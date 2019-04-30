@@ -5,8 +5,8 @@ import java.lang.reflect.*;
 import static java.lang.System.out;
 
 public class Reflection13 {
-    private static Field getField( Class instance, String field_name ) {
-        return ReflectionCommon.getField( instance, field_name );
+    private static Field getField( Class class_instance, String field_name ) {
+        return ReflectionCommon.getField( class_instance, field_name );
     }
 
     private static void showFieldValue( Object instance, Field field, String label ) {
@@ -27,8 +27,8 @@ public class Reflection13 {
 
     }
 
-    private static Constructor getParamConstructor( Class instance, int param_count ) {
-        Constructor[] constructors = instance.getDeclaredConstructors();
+    private static Constructor getParamConstructor( Class class_instance, int param_count ) {
+        Constructor[] constructors = class_instance.getDeclaredConstructors();
 
         for ( Constructor c : constructors ) {
             int c_param_count = c.getParameterCount();
