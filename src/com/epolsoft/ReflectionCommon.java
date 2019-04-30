@@ -39,29 +39,22 @@ public class ReflectionCommon {
     /*
         Возвращаем представление имени для Executable и его наследников
     */
-//    //public static String getName( Method m ) {
-//        return "NAME: [" + class_instance.getClass() + "]";
-//    }
-
-//    public static String getName( Method m ) {
-//        return getName( m );
-//    }
 
     public static String getName( Field f ) {
-        return "\n    NAME: [" + f.getName() + "]";
+        return "\n    " + getName( f.getName() );
     }
 
     public static String getName( Executable exec ) {
-        return "\n    NAME: [" + exec.getName() + "]";
+        return "\n    " + getName( exec.getName() );
     }
 
     public static String getName( Object class_instance ) {
-        return getName( class_instance.getClass() );
+        return getName( class_instance.getClass().getName() );
+    }
+    private static String getName( String name ) {
+        return "NAME: [" + name + "]";
     }
 
-    public static String getName( Class class_instance ) {
-        return "NAME: [" + class_instance.getName() + "]";
-    }
 
     public static String getModifiersInfo( int modifiers ) {
         return "MODIFIERS: " + Modifier.toString( modifiers );
@@ -148,7 +141,7 @@ public class ReflectionCommon {
         return getDeclaredFields( instance.getClass() );
     }
 
-    public static Field[] getDeclaredFields( Class class_instance ) {
+    private static Field[] getDeclaredFields( Class class_instance ) {
         try {
             return class_instance.getDeclaredFields();
         } catch ( SecurityException x ) {
@@ -158,12 +151,13 @@ public class ReflectionCommon {
     }
 
     public static Method getMethod( Object instance, String method_name ) {
-        return getMethod( instance.getClass(), method_name );
+        Class[] args = new Class[0];
+        return getMethod( instance.getClass(), method_name, args );
     }
 
-    public static Method getMethod( Class class_instance, String method_name ) {
+    public static Method getMethod( Class class_instance, String method_name, Class... args ) {
         try {
-            return class_instance.getDeclaredMethod( method_name );
+            return class_instance.getDeclaredMethod( method_name, args );
         } catch ( NoSuchMethodException e ) {
             //e.printStackTrace();
             return null;

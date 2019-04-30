@@ -11,7 +11,6 @@ public final class Reflection_Source extends Reflection_SourceSuper implements R
 
     private static String info = "REFLECTION!";
 
-
     public int getNumber() {
         return number;
     }
@@ -20,9 +19,9 @@ public final class Reflection_Source extends Reflection_SourceSuper implements R
         this.number = number;
     }
 
-    private void setNumberX2( int number ) {
-
-        this.number = number * 2;
+    private static int setNumberX2( int number ) {
+        number = number * 2;
+        return number;
     }
 
     public String getName() {
@@ -45,7 +44,7 @@ public final class Reflection_Source extends Reflection_SourceSuper implements R
         this.number = 0;
     }
 
-    public Reflection_Source(int number ) {
+    public Reflection_Source( int number ) {
         this.number = number;
     }
 }

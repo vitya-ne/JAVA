@@ -60,15 +60,15 @@ public class Reflection11 {
 
         out.println( "\nREFLECTION - 11" );
 
-        if ( args.length < 3 ) {
-            out.println("\nPlease set program arguments: <ClassName> <FieldName> <NewValue>");
-            out.println("Example:");
-            out.println("java.lang.String hash 8888");
-            return;
-        }
-
-        doWithIntField( args[0], args[1], args[2] );
-
+//        if ( args.length < 3 ) {
+//            out.println("\nPlease set program arguments: <ClassName> <FieldName> <NewValue>");
+//            out.println("Example:");
+//            out.println("java.lang.String hash 8888");
+//            return;
+//        }
+//
+//        doWithIntField( args[0], args[1], args[2] );
+        doWithIntField( "java.lang.String", "hash", "8888" );
 
     }
 }

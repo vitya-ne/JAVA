@@ -38,7 +38,9 @@ public class Reflection5 {
             return;
         }
 
-        out.print( ReflectionCommon.getClassName( instance ) );
+        out.println( ReflectionCommon.getClassName( instance ) );
+
+        out.print( "  FIELD:" );
 
         out.println( ReflectionCommon.getFieldInfo( field ) );
 

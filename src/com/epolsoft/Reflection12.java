@@ -11,9 +11,13 @@ public class Reflection12 {
     private static void invokeMethod( Object instance, Method method, Integer p_value ) {
         Object result;
 
+        out.println( "\n  INVOKE: " );
+        out.println( "    PARAMETER VALUE: " + p_value );
+
         try {
+            method.setAccessible( true );
             result = method.invoke( instance, p_value );
-            out.println( "\n    INVOKE RESULT: " + result );
+            out.println( "    RESULT: " + result );
         } catch ( IllegalAccessException | InvocationTargetException e ) {
             e.printStackTrace();
         }
@@ -25,7 +29,7 @@ public class Reflection12 {
 
         params = m.getParameters();
 
-        if ( params.length > 0 && params.length < i ) {
+        if ( params.length > 0 && params.length <= i+1 ) {
             return params[i];
         } else {
             return null;
@@ -47,16 +51,14 @@ public class Reflection12 {
             return;
         }
 
-        out.print( ReflectionCommon.getName( instance ) );
-
-        method = ReflectionCommon.getMethod( class_instance, method_name );
+        method = ReflectionCommon.getMethod( class_instance, method_name, int.class );
 
         if ( method == null ) {
-            out.print( "\nERROR! Method not found " + method_name );
+            out.print("\nERROR! Method not found " + method_name);
             return;
         }
 
-        if ( ReflectionCommon.isPrivateMethod( method ) ) {
+        if ( !ReflectionCommon.isPrivateMethod( method ) ) {
             out.println( "\nERROR! Method is not private" );
             return;
         }
@@ -77,12 +79,12 @@ public class Reflection12 {
 
     /*
         Вызвать private метод с параметрами.
-        CLI PARAMS: "java.lang.String" "charAt" "4"
+        CLASS: com.epolsoft.Reflection_Source
     */
     public static void main( String[] args ) {
 
         out.println( "\nREFLECTION - 12" );
 
-        doWithMethod( "setName", 4 );
+        doWithMethod( "setNumberX2", 4 );
     }
 }
