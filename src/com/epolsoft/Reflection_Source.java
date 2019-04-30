@@ -44,7 +44,7 @@ public final class Reflection_Source extends Reflection_SourceSuper implements R
         this.number = 0;
     }
 
-    public Reflection_Source( int number ) {
+    private Reflection_Source( int number ) {
         this.number = number;
     }
 }
