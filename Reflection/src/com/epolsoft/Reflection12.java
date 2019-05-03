@@ -79,7 +79,7 @@ public class Reflection12 {
 
     /*
         Вызвать private метод с параметрами.
-        CLASS: com.epolsoft.Reflection_Source
+        CLASS: com.Reflection_Source
     */
     public static void main( String[] args ) {
 

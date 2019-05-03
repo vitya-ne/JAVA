@@ -98,7 +98,7 @@ public class Reflection13 {
 
     /*
         Вызвать private конструктор с параметрами.
-        CLASS: com.epolsoft.Reflection_Source
+        CLASS: com.Reflection_Source
     */
     public static void main( String[] args ) {
 
