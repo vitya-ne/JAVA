@@ -1,17 +1,15 @@
-<%@ page language="java" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html lang="en">
-    <head>
-          <title>
-          <%= request.getAttribute("page_name") %>
-          </title>
-    </head>
+<jsp:include page="head.jsp"/>
 <body>
-    <h1>Welcome to ${page_name}</h1>
+    <jsp:include page="header.jsp"/>
     <form method="post" action="result">
         <h2>Hello, please enter two numbers</h2>
-        <input title="first number" type="number" name="number1" />
-        <input title="second number" type="number" name="number2" />
-        <input type="submit" value="Submit">
+        <label>First number:</label>
+        <input class="form-control" name="number1" title="first number" type="text">
+        <label>Second number:</label>
+        <input class="form-control" name="number2" title="second number" type="text">
+        <input class="btn" type="submit" value="Submit">
     </form>
 </body>
 </html>

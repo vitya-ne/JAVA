@@ -1,18 +1,13 @@
-<%@ page language="java" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html lang="en">
-    <head>
-          <title>${page_name}</title>
-    </head>
+<jsp:include page="head.jsp"/>
 <body>
-    <h1>Welcome to ${page_name}</h1>
-
-    <h2>You entered:</h2>
-    <p>
-    <span>${number1}</span>
-    <span>${number2}</span>
-    </p>
+    <jsp:include page="header.jsp"/>
     <h2>Our result:</h2>
-    <span>${result}</span>
+    <p>
+    <span class="number">${number1}</span> + <span class="number">${number2}</span> = <span class="number">${result}</span>
+    </p>
+    <a href="/TestServlet">Return to main page</a>
 
 </body>
 </html>

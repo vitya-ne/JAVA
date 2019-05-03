@@ -12,36 +12,29 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet( "/result" )
 public class ResponseServlet extends HttpServlet {
 
-    private static int Calculate( String str1, String str2 ) {
-        int num1, num2;
-
-        num1 = Integer.parseInt( str1 );
-        num2 = Integer.parseInt( str2 );
-
-        return num1 + num2;
-    }
 
     @Override
     public void doPost( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException {
         String param1, param2;
-        int result_val;
-
+        int num1, num2;
 
         param1 = request.getParameter("number1" );
         param2 = request.getParameter("number2" );
-
-        result_val = Calculate( param1, param2 );
-
-        response.setContentType( "text/html;charset=UTF-8" );
-        response.setBufferSize( 8192 );
-
-        request.setAttribute( "page_name", Common.getPageName() );
         request.setAttribute("number1", param1 );
         request.setAttribute("number2", param2 );
-        request.setAttribute("result", result_val );
+
+        try {
+            num1 = Common.getNumber( param1 );
+            num2 = Common.getNumber( param2 );
+        } catch ( NumberFormatException e ) {
+            request.setAttribute("error_mess", e.toString() );
+            request.getRequestDispatcher("error.jsp" ).forward( request, response );
+            return;
+        }
+
+        request.setAttribute("result", Common.Calculate( num1, num2 ) );
 
         request.getRequestDispatcher("result.jsp" ).forward( request, response );
-
     }
 
     @Override
