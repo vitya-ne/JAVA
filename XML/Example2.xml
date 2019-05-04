@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<countrys>
+    <country>
+        <name>France</name>
+        <population>59.7</population>
+    </country>
+    <country>
+        <name>Italy</name>
+        <population>60.6</population>
+    </country>
+</countrys>
