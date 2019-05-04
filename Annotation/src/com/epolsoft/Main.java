@@ -29,14 +29,16 @@ public class Main {
         }
     }
 
-    public static void showFieldNameAnnotations( Field f ) {
+    private static void showFieldNameAnnotations( Field f, String title ) {
         Annotation[] all_annotations;
 
+        out.print("\n  " + title + " [" + FieldName.name + "] ANNOTATION:" );
+
         if ( f == null ) {
+            out.println( " --" );
             return;
         }
-
-        out.println("\n  ANNOTATION ON FIELD: " + f.getName() );
+        out.println("\n    FIELD: " + f.getName() );
         out.println( "    CLASS: " + f.getDeclaringClass().getName() );
 
         all_annotations = f.getAnnotations();
@@ -48,32 +50,31 @@ public class Main {
         }
     }
 
-    private static void showAnnotations( Class an_class ) {
-        Annotation[] all_annotations;
+    private static void showClassDataAnnotation( Annotation a ) {
         ClassData cdata;
-        Field f;
 
-        out.println("\nANNOTATION ON CLASS: [" + an_class.getName() + "]" );
+        if ( a instanceof ClassData ) {
+            cdata = ( ClassData ) a;
+            out.println("  [" + cdata.name + "] ANNOTATION:" );
+            out.println("    AUTHOR:       " + cdata.author());
+            out.println("    COMPANY:      " + cdata.company());
+            out.println("    LastModified: " + cdata.lastModified());
+            out.println("    Revision:     " + cdata.currentRevision());
+        }
+    }
+
+    private static void showAnnotations( Class an_class ) {
+        Annotation[] annotations;
+
+        out.println("\nANNOTATIONS IN CLASS: [" + an_class.getName() + "]" );
 
         try {
-            all_annotations = an_class.getAnnotations();
+            annotations = an_class.getAnnotations();
 
-            for ( Annotation a : all_annotations ) {
-                if ( a instanceof ClassData ) {
-                    cdata = ( ClassData ) a;
-                    out.println("  AUTHOR: " + cdata.author());
-                    out.println("  COMPANY: " + cdata.company());
-                    out.println("  LastModified: " + cdata.lastModified());
-                    out.println("  Revision: " + cdata.currentRevision());
-
-                    f = getField( an_class, "name" );
-
-                    if ( f == null ) {
-                        f = getSuperField(an_class, "name");
-                    }
-
-                    showFieldNameAnnotations( f );
-                }
+            for ( Annotation a : annotations ) {
+                showClassDataAnnotation( a );
+                showFieldNameAnnotations( getField( an_class, "name" ), "SELF" );
+                showFieldNameAnnotations( getSuperField(an_class, "name"), "SUPER" );
             }
         } catch ( Exception e ) {
             e.printStackTrace();
@@ -81,12 +82,25 @@ public class Main {
     }
 
     private static void doWithAnnotations() {
-        Class class1 = Person.class;
+        out.println( "\nclass Person:" +
+                "\nhas Class Annotation (self), Field Annotation (self):" );
+        showAnnotations( Person.class );
 
-        showAnnotations( class1 );
+        out.println( "\nclass Developer:" +
+                "\nhas Class Annotation (some default):" );
         showAnnotations( Developer.class );
+
+        out.println( "\nclass Company:" +
+                "\nhas Class Annotation (some default), Field Annotation (self):" );
         showAnnotations( Company.class );
+
+        out.println( "\nclass Language:" +
+                "\nhas Class Annotation (self), Field Annotation (default):" );
         showAnnotations( Language.class );
+
+        out.println( "\nclass Tester" +
+                "\nhas not any self Annotations:" );
+        showAnnotations( Tester.class );
     }
 
     public static void main(String[] args) {

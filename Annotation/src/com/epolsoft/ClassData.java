@@ -9,6 +9,8 @@ import java.lang.annotation.RetentionPolicy;
 @Inherited
 @Retention( value= RetentionPolicy.RUNTIME )
 @interface ClassData {
+    @FieldName()
+    String name = "ClassData";
     String author();
     String company() default "epolsoft.com";
     String lastModified();

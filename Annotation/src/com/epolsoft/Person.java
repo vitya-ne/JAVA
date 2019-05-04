@@ -1,7 +1,5 @@
 package com.epolsoft;
 
-import java.lang.annotation.Inherited;
-
 @ClassData(
     author = "Bill Gates",
     lastModified = "02.05.2019",
