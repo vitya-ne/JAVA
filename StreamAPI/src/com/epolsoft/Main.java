@@ -8,6 +8,8 @@ public class Main {
         Stream2.doTask();
         Stream3.doTask();
         Stream4.doTask();
+        Stream5.doTask();
+        Stream6.doTask();
 
     }
 }
