@@ -16,7 +16,7 @@ public class ResponseServlet extends HttpServlet {
     @Override
     public void doPost( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException {
         String param1, param2;
-        int num1, num2;
+        float num1, num2;
 
         param1 = request.getParameter("number1" );
         param2 = request.getParameter("number2" );

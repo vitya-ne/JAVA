@@ -71,7 +71,6 @@
             <path>/TestServlet</path>
             <server>TomcatServer</server>
             <update>true</update>
-            <url>http://localhost:8989/manager/text</url>
           </configuration>
         </plugin>
 

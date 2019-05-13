@@ -21,3 +21,6 @@
 
     tomcat deploy:
         mvn clean package org.apache.tomcat.maven:tomcat7-maven-plugin:2.2:deploy
+
+        Если tomcat manager URL параметры: IP,PORT не стандартные ( http://localhost:8080/manager/text ), можно использовать параметр:
+        -Dmaven.tomcat.url=http://<IP>:<PORT>/manager/text
