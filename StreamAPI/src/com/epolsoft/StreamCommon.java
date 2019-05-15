@@ -6,12 +6,12 @@ import static java.lang.System.out;
 
 public class StreamCommon {
     public static void showTask( int task_num ) {
-        out.println( "\nStream" +
+        out.println( "\nTask: Stream" +
                 task_num + "\n"
         );
     }
 
-    public static void showStrim( Stream stream ) {
+    public static void showStream(Stream stream ) {
         out.print( "Stream:" );
 
         stream.forEach( item -> System.out.print( " " + item ) );

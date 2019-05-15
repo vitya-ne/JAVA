@@ -16,7 +16,7 @@ public class Stream3 {
         out.println( "Array: " + Arrays.asList( array ) );
 
         stream = Arrays.stream( array );
-        StreamCommon.showStrim( stream );
+        StreamCommon.showStream( stream );
     }
 
     public static void main( String[] args ) {

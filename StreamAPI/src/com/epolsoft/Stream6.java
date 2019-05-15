@@ -17,7 +17,7 @@ public class Stream6 {
         out.println( "List content: " + arrayList );
 
         stream = arrayList.parallelStream();
-        StreamCommon.showStrim( stream );
+        StreamCommon.showStream( stream );
     }
 
     public static void main( String[] args ){

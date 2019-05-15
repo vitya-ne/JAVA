@@ -16,7 +16,7 @@ public class Stream2 {
         out.println( "Enum: " + Arrays.asList( Inner.values() ) );
 
         stream = Arrays.stream( Inner.values() );
-        StreamCommon.showStrim( stream );
+        StreamCommon.showStream( stream );
 
     }
 

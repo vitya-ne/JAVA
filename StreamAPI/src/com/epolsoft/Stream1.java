@@ -18,7 +18,7 @@ public class Stream1 {
         out.println( "ArrayList: " + arrayList );
 
         stream = arrayList.stream();
-        StreamCommon.showStrim( stream );
+        StreamCommon.showStream( stream );
 
     }
 

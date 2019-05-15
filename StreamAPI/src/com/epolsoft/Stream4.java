@@ -32,7 +32,7 @@ public class Stream4 {
             showFileContent(F_NAME);
 
             stream = Files.lines( Paths.get( F_NAME ) );
-            StreamCommon.showStrim(stream);
+            StreamCommon.showStream(stream);
 
         } catch (IOException e) {
             e.printStackTrace();
