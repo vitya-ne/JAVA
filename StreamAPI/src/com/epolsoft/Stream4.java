@@ -8,10 +8,10 @@ import java.util.stream.Stream;
 import static java.lang.System.out;
 
 public class Stream4 {
+    final private static String F_NAME = "./files/1.txt";
 
-
-    private static void showFileContent( String file_name ) throws IOException {
-        FileReader f = new FileReader( file_name );
+    private static void showFileContent() throws IOException {
+        FileReader f = new FileReader( F_NAME );
         BufferedReader buf = new BufferedReader( f );
         String str;
 
@@ -20,27 +20,25 @@ public class Stream4 {
         }
     }
 
-    static void doTask() {
-        final String F_NAME = "./files/1.txt";
+    private static void doTask() {
         Stream<String> stream;
 
-        StreamCommon.showTask(4);
-
-        out.println("File content: " + F_NAME);
+        out.println( "File content: " + F_NAME );
 
         try {
-            showFileContent(F_NAME);
+            showFileContent();
 
             stream = Files.lines( Paths.get( F_NAME ) );
-            StreamCommon.showStream(stream);
+            StreamCommon.showStream( stream );
 
-        } catch (IOException e) {
+        } catch ( IOException e ) {
             e.printStackTrace();
         }
     }
 
     public static void main( String[] args ){
 
+        StreamCommon.showTask(4);
         doTask();
 
     }

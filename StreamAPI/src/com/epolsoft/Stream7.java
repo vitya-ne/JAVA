@@ -6,10 +6,8 @@ import static java.lang.System.out;
 
 public class Stream7 {
 
-    static void doTask( int input_num ) {
+    private static void doTask( int input_num ) {
         Stream stream;
-
-        StreamCommon.showTask(7 );
 
         out.println( "Input: " + input_num );
 
@@ -19,6 +17,7 @@ public class Stream7 {
 
     public static void main( String[] args ){
 
+        StreamCommon.showTask(7 );
         doTask( 1 );
         doTask( 2 );
 

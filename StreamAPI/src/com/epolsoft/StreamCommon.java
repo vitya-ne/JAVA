@@ -4,17 +4,22 @@ import java.util.stream.Stream;
 
 import static java.lang.System.out;
 
-public class StreamCommon {
-    public static void showTask( int task_num ) {
+class StreamCommon {
+    static void showTask( int task_num ) {
         out.println( "\nTask: Stream" +
                 task_num + "\n"
         );
     }
 
-    public static void showStream(Stream stream ) {
+    static void showStream( Stream<?> stream ) {
+        /*
+         * Stream<?> instead of Stream
+         *  because warning "Unchecked call to 'forEach()' as a member of raw type..
+         */
         out.print( "Stream:" );
 
-        stream.forEach( item -> System.out.print( " " + item ) );
+        stream.forEach( item -> out.print( " " + item ) );
+        out.print( "\n" );
     }
 
 

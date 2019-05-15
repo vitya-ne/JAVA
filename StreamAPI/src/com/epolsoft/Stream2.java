@@ -8,10 +8,8 @@ import static java.lang.System.out;
 public class Stream2 {
     private enum Inner{ a1, a2, a3 }
 
-    static void doTask() {
+    private static void doTask() {
         Stream stream;
-
-        StreamCommon.showTask( 2 );
 
         out.println( "Enum: " + Arrays.asList( Inner.values() ) );
 
@@ -22,6 +20,7 @@ public class Stream2 {
 
     public static void main( String[] args ) {
 
+        StreamCommon.showTask( 2 );
         doTask();
 
     }

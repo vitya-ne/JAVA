@@ -9,7 +9,7 @@ public class LambdaCommon {
     }
 
     public static void showTask( int task_num ) {
-        out.println( "\nTask: Lambda " +
+        out.println( "\nTask: Lambda" +
                 task_num + "\n"
         );
     }

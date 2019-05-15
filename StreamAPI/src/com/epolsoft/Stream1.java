@@ -7,23 +7,21 @@ import static java.lang.System.out;
 
 public class Stream1 {
 
-    private static ArrayList<String> arrayList = new ArrayList<>( Arrays.asList( "a1", "a2", "a3" ) );
+    final private static ArrayList<String> ARRAY_LIST = new ArrayList<>( Arrays.asList( "a1", "a2", "a3" ) );
 
-    static void doTask() {
-
+    private static void doTask() {
         Stream stream;
 
-        StreamCommon.showTask( 1 );
+        out.println( "ArrayList: " + ARRAY_LIST );
 
-        out.println( "ArrayList: " + arrayList );
-
-        stream = arrayList.stream();
+        stream = ARRAY_LIST.stream();
         StreamCommon.showStream( stream );
 
     }
 
     public static void main( String[] args ) {
 
+        StreamCommon.showTask( 1 );
         doTask();
 
     }
