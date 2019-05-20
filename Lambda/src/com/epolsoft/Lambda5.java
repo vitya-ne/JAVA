@@ -9,11 +9,11 @@ public class Lambda5 {
     final static private Pattern EMAIL_RE = Pattern.compile( "\\w+@\\w+\\.\\w+", Pattern.CASE_INSENSITIVE );
 
     @FunctionalInterface
-    private interface HasEmail {
+    interface HasEmail {
         Boolean check( String s );
     }
 
-    private static HasEmail getLambda() {
+    static HasEmail getLambda() {
         return str -> {
             Matcher m = EMAIL_RE.matcher( str );
             return m.find();
