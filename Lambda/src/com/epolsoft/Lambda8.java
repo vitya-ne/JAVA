@@ -78,7 +78,7 @@ public class Lambda8 {
 
     public static void main( String[] args ) {
 
-        LambdaCommon.showTask( 7 );
+        LambdaCommon.showTask( 8 );
         doTask();
 
     }
