@@ -1,5 +1,7 @@
 package com.epolsoft;
 
+import java.util.function.UnaryOperator;
+
 import static java.lang.System.out;
 
 class LambdaCommon {
@@ -14,4 +16,6 @@ class LambdaCommon {
                 task_num + "\n"
         );
     }
+
+    static UnaryOperator<Float> square = z -> z * z;
 }

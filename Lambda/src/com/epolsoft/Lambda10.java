@@ -14,12 +14,12 @@ import static java.lang.System.out;
 public class Lambda10 {
 
     static BinaryOperator<Float> getLambda() {
-        UnaryOperator<Float> square = z -> z * z;
-        BinaryOperator<Float> sum = Lambda9.getLambda();
+        UnaryOperator<Float> square = LambdaCommon.square; // z -> z * z;
+        BinaryOperator<Float> sum = Lambda9.getLambda();  // Float::sum;
         return ( x, y ) -> square.apply( sum.apply( x, y) );
     }
 
-    private static void showSum( float num1, float num2, BinaryOperator<Float> lambda ) {
+    private static void showCalc(float num1, float num2, BinaryOperator<Float> lambda ) {
 
         out.println( "calc: (" +
                 num1 +
@@ -35,9 +35,9 @@ public class Lambda10 {
 
         BinaryOperator<Float> lambda = getLambda();
 
-        showSum( 2, 5, lambda );
-        showSum( (float)12, -9, lambda );
-        showSum( -5, (float)3, lambda );
+        showCalc( 2, 5, lambda );
+        showCalc( (float)12, -9, lambda );
+        showCalc( -5, (float)3, lambda );
     }
 
     public static void main( String[] args ) {
