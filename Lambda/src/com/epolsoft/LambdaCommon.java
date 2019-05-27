@@ -18,4 +18,6 @@ class LambdaCommon {
     }
 
     static UnaryOperator<Float> square = z -> z * z;
+
+    static UnaryOperator<Float> increment = z -> z + 1;
 }
