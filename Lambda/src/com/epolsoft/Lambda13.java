@@ -10,10 +10,10 @@ import static java.lang.System.out;
  */
 
 public class Lambda13 {
-    private static UnaryOperator<Float> getLambda() {
+    static UnaryOperator<Float> getLambda() {
         UnaryOperator<Float> square = Lambda12.getLambda(); // z -> z * z;
 
-        return  z -> square.apply( LambdaCommon.increment.apply( z ) );
+        return  z -> LambdaCommon.increment.andThen( square ).apply( z );
     }
 
     private static void showIncSquare( float num, UnaryOperator<Float> lambda ) {

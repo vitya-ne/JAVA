@@ -6,21 +6,23 @@ import static java.lang.System.out;
 
 
 /*
- *  Добавить к лямбде, которая возводит число в квадрат инкремент после
+ *  Добавить к лямбде,
+ *    которая выполняет инкремент и возводит число в квадрат, декремент после
  */
 
 public class Lambda14 {
     private static UnaryOperator<Float> getLambda() {
-        UnaryOperator<Float> square = Lambda12.getLambda(); // z -> z * z;
+        UnaryOperator<Float> decrement = z -> z - 1;
+        UnaryOperator<Float> incSquare = Lambda13.getLambda(); // z -> ( z + 1 ) ^2
 
-        return  z -> LambdaCommon.increment.apply( square.apply( z ) );
+        return  z -> incSquare.andThen( decrement ).apply( z );
     }
 
     private static void showIncSquare( float num, UnaryOperator<Float> lambda ) {
 
-        out.println( "calc: " +
+        out.println( "calc: (" +
                 num +
-                " ^2 + 1 = " +
+                " + 1 )^2 - 1 = " +
                 lambda.apply( num )
         );
 
@@ -31,7 +33,7 @@ public class Lambda14 {
         UnaryOperator<Float> lambda = getLambda();
 
         showIncSquare( 8, lambda );
-        showIncSquare( (float) 24.5, lambda );
+        showIncSquare( (float) 3.5, lambda );
         showIncSquare( -5, lambda );
     }
 
