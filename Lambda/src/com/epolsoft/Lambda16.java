@@ -1,7 +1,6 @@
 package com.epolsoft;
 
 import java.util.function.IntUnaryOperator;
-import java.util.function.UnaryOperator;
 
 import static java.lang.System.out;
 
